@@ -3,7 +3,7 @@
 include "connect.php";
 include "logic.php";
 include "candaction.php";
-include "uplogic.php";
+// include "uplogic.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

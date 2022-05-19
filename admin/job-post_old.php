@@ -3,6 +3,7 @@ include "connect.php";
 include "logic.php";
 include "adminUpdate.php";
 include "post-job.php";
+include "update.php";
 ?>
 
 
@@ -242,6 +243,7 @@ include "post-job.php";
           <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#sModal">Post New job</a>
 
             <article class="entry">
+            
             <?php foreach ($files as $file): ?>
 
               <div class="col-lg-6" style="float:left; background:#099;">
@@ -267,13 +269,22 @@ include "post-job.php";
                 </tr>
                 <tr>
                   <td colspan="2">
+
+
+
+
                     <p align="right">
-                      <a href="adminUpdate.php?id=<?php echo $file['id']?>" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#DModal">Update</a>
+                      <?php 
+                      
+                      ?>
+
+                    
+                      <a href="update.php? id=<?php echo $file['id']?>" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#DModal">Update</a>
                       <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"> -->
     <!-- Open modal
   </button>
                       <a href="adminupdate.php?updateid='.$id.'" class="text-light">update</a> -->
-                      <a href="post-delete.php?id=<?php echo $file['id']?>"class="btn btn-danger">Delete</a>
+                      <a href="post-delete.php? id=<?php echo $file['id']?>"class="btn btn-danger">Delete</a>
                     </p>
                   </td>
                 </tr>
